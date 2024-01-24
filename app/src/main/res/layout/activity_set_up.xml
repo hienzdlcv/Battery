@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".UI.Setup.SetUpActivity">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPreView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ic_menu_set_up"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/imgPreView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/eyes"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/arrowpointingout"
+            app:elevation="1dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgPreView"
+            app:layout_constraintTop_toTopOf="@+id/imgPreView" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/eyes1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_settings"
+            app:elevation="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/eyes"
+            app:layout_constraintEnd_toStartOf="@+id/eyes" />
+
+        <Button
+            android:id="@+id/setupBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/bg_item_setting"
+            android:text="@string/choose_this_image"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/secondPic"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:id="@+id/txtTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="13:03"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <AnalogClock
+                android:id="@+id/clock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:dial="@drawable/clock1"
+                android:dialTint="@color/black"
+                android:hand_hour="@drawable/minus"
+                android:hand_hourTint="@color/black"
+                android:hand_minute="@drawable/group_23"
+                android:hand_minuteTint="@color/black"
+                android:timeZone="GMT+7"
+                android:visibility="gone" />
+
+            <AnalogClock
+                android:id="@+id/clock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:dial="@drawable/clock2svg"
+                android:dialTint="@color/black"
+                android:hand_hour="@drawable/minus"
+                android:hand_hourTint="@color/black"
+                android:hand_minute="@drawable/group_23"
+                android:hand_minuteTint="@color/black"
+                android:timeZone="GMT+7"
+                android:visibility="gone" />
+
+            <AnalogClock
+                android:id="@+id/clock3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:dial="@drawable/clock3"
+                android:dialTint="@color/black"
+                android:hand_hour="@drawable/minus"
+                android:hand_hourTint="@color/black"
+                android:hand_minute="@drawable/group_23"
+                android:hand_minuteTint="@color/black"
+                android:timeZone="GMT+7"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="13 03 2024"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:visibility="gone"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/cardfl4"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <FrameLayout
+                android:id="@+id/fl4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

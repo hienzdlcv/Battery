@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".UI.Setting.farmentforViewPager.FragmentFont1">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your font"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/montserrat"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:text="Montserrat" />
+
+            <TextView
+                android:id="@+id/notosans"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/notosans"
+                android:gravity="center"
+                android:text="Noto Sans" />
+
+            <TextView
+                android:id="@+id/opensans"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/opensans"
+                android:gravity="center"
+                android:text="Open Sans" />
+
+            <TextView
+                android:id="@+id/roboto"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Roboto" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cabin"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/cabin"
+                android:gravity="center"
+                android:text="Cabin" />
+
+            <TextView
+                android:id="@+id/firesans"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/firesans"
+                android:gravity="center"
+                android:text="Fire Sans" />
+
+            <TextView
+                android:id="@+id/nunito"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/nunito"
+                android:gravity="center"
+                android:text="Nunito" />
+
+            <TextView
+                android:id="@+id/worksan"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="2dp"
+                android:background="@drawable/bg_item_setting"
+                android:fontFamily="@font/worksan"
+                android:gravity="center"
+                android:text="Work San" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

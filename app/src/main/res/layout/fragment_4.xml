@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UI.Setting.farmentforViewPager.Fragment4">
+
+        <ImageView
+            android:id="@+id/color13"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/mau13" />
+
+        <ImageView
+            android:id="@+id/color14"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/mau14" />
+
+        <ImageView
+            android:id="@+id/color15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/mau15" />
+
+        <ImageView
+            android:id="@+id/color16"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/mau16"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+    </LinearLayout>
+</layout>

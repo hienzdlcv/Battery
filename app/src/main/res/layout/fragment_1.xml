@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".UI.Setting.farmentforViewPager.Fragment1">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/inter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose your color"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/color1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau1" />
+
+            <ImageView
+                android:id="@+id/color2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau2" />
+
+            <ImageView
+                android:id="@+id/color3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau3" />
+
+            <ImageView
+                android:id="@+id/color4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau4"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/color5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau5" />
+
+            <ImageView
+                android:id="@+id/color6"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau6" />
+
+            <ImageView
+                android:id="@+id/color7"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau7" />
+
+            <ImageView
+                android:id="@+id/color8"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau8"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/color9"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau9" />
+
+            <ImageView
+                android:id="@+id/color10"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau10" />
+
+            <ImageView
+                android:id="@+id/color11"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau11" />
+
+            <ImageView
+                android:id="@+id/color12"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau12"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/color13"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau13" />
+
+            <ImageView
+                android:id="@+id/color14"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau14" />
+
+            <ImageView
+                android:id="@+id/color15"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau15" />
+
+            <ImageView
+                android:id="@+id/color16"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/mau16"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="30dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

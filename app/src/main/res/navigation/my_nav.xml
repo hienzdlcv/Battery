@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.battery.UI.HomeFramgnet.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/batteryFragment"
+        android:name="com.example.battery.UI.BatteryInfo.BatteryFragment"
+        android:label="fragment_battery"
+        tools:layout="@layout/fragment_battery" />
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.example.battery.UI.Gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" >
+        <action
+            android:id="@+id/action_galleryFragment_to_photoPickerActivity2"
+            app:destination="@id/photoPickerActivity2" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.battery.UI.Setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <activity
+        android:id="@+id/photoPickerActivity2"
+        android:name="com.example.battery.UI.PhotoPicker.PhotoPickerActivity"
+        android:label="PhotoPickerActivity" />
+</navigation>

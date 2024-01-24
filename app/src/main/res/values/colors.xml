@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#86F04D</color>
+    <color name="colorPrimaryDark">#1EE19B</color>
+    <color name="colorAccent">#2CB252</color>
+    <color name="background">#131318</color>
+    <color name="bg_language">#131318</color>
+
+    <color name="colorAds">#9E9E9E</color>
+    <color name="gray">#131318</color>
+    <color name="gray1">#3DA1A1A1</color>
+    <color name="gray2">#26262B</color>
+    <color name="gray4">#B9B9BF</color>
+    <color name="alert">#FA4D5D</color>
+    <color name="transparent40">#66000000</color>
+    <color name="filterShadow">#32CFE927</color>
+
+
+    <color name="lightTransparent">#16000000</color>
+
+    <color name="ads_btn_text_color">#ffffffff</color>
+    <color name="ads_btn_ripple_color">#ffffffff</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="color_131318">#131318</color>
+    <color name="green">#FF00FF00</color>
+
+</resources>

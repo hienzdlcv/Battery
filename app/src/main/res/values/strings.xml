@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Battery</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings">Settings</string>
+    <string name="gallery">Gallery</string>
+    <string name="battery">Battery</string>
+    <string name="home">Home</string>
+
+    <string name="Good">Good</string>
+    <string name="TooHot">Too Hot</string>
+    <string name="normal">Normal</string>
+    <string name="language">Language</string>
+    <string name="sound">Sound</string>
+    <string name="rate_us">Rate us</string>
+    <string name="privacy">Privacy</string>
+    <string name="version">Version</string>
+    <string name="choose_this_image">Choose this image</string>
+    <string name="delete">DELETE</string>
+    <string name="your_gallery">Your Gallery</string>
+    <string name="battery_charge">BATTERY CHARGE</string>
+    <string name="here">Here</string>
+    <string name="search_result">Search result</string>
+    <string name="search_for_more_here">Search for more here</string>
+    <string name="trending_image_for_you">Trending image for you</string>
+    <string name="viewall">viewAll</string>
+    <string name="trending_gifs_for_you">Trending gifs for you</string>
+    <string name="your_phone_is_charging">your phone is charging</string>
+    <string name="battery_remaining">Battery Remaining</string>
+    <string name="help">Help</string>
+    <string name="_1">1</string>
+    <string name="display_over_other_apps">Display over other apps</string>
+    <string name="turn_floating_window_on_to_show_up_charging_animation">Turn “Floating Window” on to show up charging animation</string>
+    <string name="floating_window">Floating Window</string>
+    <string name="_2">2</string>
+    <string name="ignore_battery_optimization">Ignore Battery optimization</string>
+    <string name="if_the_animation_does_not_work_you_can_try_turning_on_ignore_battery_optimizaition">If the animation does not work, you can try turning on “Ignore battery optimizaition”</string>
+    <string name="your_current_pin">Your current pin</string>
+    <string name="_70">70%</string>
+    <string name="temperaturebar">TemperatureBar</string>
+    <string name="_34c">34C</string>
+    <string name="voltage">Voltage</string>
+    <string name="_3700_mv">3700 mV</string>
+    <string name="your_pin_is_good">your pin is good</string>
+    <string name="charging_since">Charging since</string>
+    <string name="li_on">Li-on</string>
+    <string name="battery_type">Battery Type</string>
+    <string name="battery_capacity">Battery Capacity</string>
+    <string name="battery_health">Battery Health</string>
+    <string name="good">Good</string>
+    <string name="pick_image">Pick Image</string>
+    <string name="history">History</string>
+    <string name="your_setting">Your Setting</string>
+
+    <string-array name="battery_types">
+        <item>Li-ion</item>
+        <item>Li-poly</item>
+        <!-- Add other battery types as needed -->
+    </string-array>
+
+    <string-array name="battery_health">
+        <item>Unknown</item>
+        <item>Good</item>
+        <item>Overheat</item>
+        <item>Dead</item>
+        <!-- Add other battery health statuses as needed -->
+    </string-array>
+</resources>

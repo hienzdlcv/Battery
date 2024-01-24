@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UI.Setting.farmentforViewPager.FragmentLayout2">
+
+        <TextView
+            android:id="@+id/layout04"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_setting"
+            android:gravity="center"
+            android:text="Layout4" />
+
+        <TextView
+            android:id="@+id/layout05"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_setting"
+            android:gravity="center"
+            android:text="Layout5" />
+
+        <TextView
+            android:id="@+id/layout06"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_item_setting"
+            android:gravity="center"
+            android:text="Layout6" />
+
+    </LinearLayout>
+</layout>

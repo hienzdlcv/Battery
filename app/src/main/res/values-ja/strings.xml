@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Battery</string>
+
+    <string name="hello_blank_fragment">こんにちは、空白のフラグメント</string>
+    <string name="settings">設定</string>
+    <string name="gallery">ギャラリー</string>
+    <string name="battery">バッテリー</string>
+    <string name="home">ホーム</string>
+
+    <string name="Good">良い</string>
+    <string name="TooHot">暑すぎる</string>
+    <string name="normal">通常</string>
+    <string name="language">言語</string>
+    <string name="sound">サウンド</string>
+    <string name="rate_us">評価してください</string>
+    <string name="privacy">プライバシー</string>
+    <string name="version">バージョン</string>
+    <string name="choose_this_image">この画像を選択してください</string>
+    <string name="delete">削除</string>
+    <string name="your_gallery">あなたのギャラリー</string>
+    <string name="battery_charge">バッテリー充電</string>
+    <string name="here">ここ</string>
+    <string name="search_result">検索結果</string>
+    <string name="search_for_more_here">ここで詳細を検索</string>
+    <string name="trending_image_for_you">トレンドの画像</string>
+    <string name="viewall">すべて表示</string>
+    <string name="trending_gifs_for_you">トレンドの gif をあなたに</string>
+    <string name="your_phone_is_charging">携帯電話は充電中です</string>
+    <string name="battery_remaining">バッテリー残量</string>
+    <string name="help">ヘルプ</string>
+    <string name="_1">1</string>
+    <string name="display_over_other_apps">他のアプリの上に表示する</string>
+    <string name="turn_floating_window_on_to_show_up_charging_animation">充電アニメーションを表示するには、「フローティング ウィンドウ」をオンにします</string>
+    <string name="floating_window">フローティング ウィンドウ</string>
+    <string name="_2">2</string>
+    <string name="ignore_battery_optimization">バッテリーの最適化を無視する</string>
+    <string name="if_the_animation_does_not_work_you_can_try_turning_on_ignore_battery_optimizaition">アニメーションが機能しない場合は、「バッテリー最適化を無視」をオンにしてみてください。</string>
+    <string name="your_current_pin">現在のピン</string>
+    <string name="_70">70%</string>
+    <string name="temperaturebar">温度バー</string>
+    <string name="_34c">34℃</string>
+    <string name="voltage">電圧</string>
+    <string name="_3700_mv">3700 mV</string>
+    <string name="your_pin_is_good">あなたのピンは良好です</string>
+    <string name="charging_since">充電開始日</string>
+    <string name="li_on">リチウム</string>
+    <string name="battery_type">バッテリーの種類</string>
+    <string name="battery_capacity">バッテリー容量</string>
+    <string name="battery_health">バッテリーの状態</string>
+    <string name="good">良い</string>
+    <string name="pick_image">画像を選択</string>
+</resources>

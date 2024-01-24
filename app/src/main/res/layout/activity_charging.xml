@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animateView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/charginganimate2" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/hehe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/secondPic2"
+                android:layout_width="170dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                android:layout_height="100dp"/>
+
+            <TextView
+                android:id="@+id/txtTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="13:03"
+                android:textSize="50sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <AnalogClock
+                android:layout_marginTop="10dp"
+                android:id="@+id/clock1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dial="@drawable/clock1"
+                android:dialTint="@color/black"
+                android:hand_hour="@drawable/minus"
+                android:hand_hourTint="@color/black"
+                android:hand_minute="@drawable/group_23"
+                android:hand_minuteTint="@color/black"
+                android:timeZone="GMT+7"
+                android:visibility="gone" />
+
+            <AnalogClock
+                android:layout_marginTop="10dp"
+                android:id="@+id/clock2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dial="@drawable/clock2"
+                android:dialTint="@color/black"
+                android:hand_hour="@drawable/hourtest"
+                android:hand_hourTint="@color/black"
+                android:hand_minute="@drawable/hourtest"
+                android:hand_minuteTint="@color/black"
+                android:timeZone="GMT+7"
+                android:visibility="gone" />
+
+            <AnalogClock
+                android:layout_marginTop="10dp"
+                android:id="@+id/clock3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dial="@drawable/clock3"
+                android:dialTint="@color/black"
+                android:hand_hour="@drawable/minus"
+                android:hand_hourTint="@color/black"
+                android:hand_minute="@drawable/group_23"
+                android:hand_minuteTint="@color/black"
+                android:timeZone="GMT+7"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="13 03 2024"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

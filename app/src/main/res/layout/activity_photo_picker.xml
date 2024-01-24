@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ImagePickerActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvPhotoPicker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="100dp"
+            android:horizontalSpacing="8dp"
+            android:numColumns="auto_fit"
+            android:padding="16dp"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="8dp" />
+
+        <Button
+            android:id="@+id/pickImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_image"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp" />
+
+    </RelativeLayout>
+</layout>
