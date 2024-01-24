@@ -17,6 +17,19 @@ class FragmentFont1 : BaseFragment<FragmentFont1Binding>() {
             notosans.setOnClickListener { BatteryInfomation.timeFont.value = "notosans" }
             opensans.setOnClickListener { BatteryInfomation.timeFont.value = "opensans" }
             roboto.setOnClickListener { BatteryInfomation.timeFont.value = "roboto" }
+            cabin.setOnClickListener { BatteryInfomation.timeFont.value = "cabin" }
+            firesans.setOnClickListener { BatteryInfomation.timeFont.value = "firesans" }
+            worksan.setOnClickListener { BatteryInfomation.timeFont.value = "worksan" }
+            nunito.setOnClickListener { BatteryInfomation.timeFont.value = "nunito" }
+
+            barlow.setOnClickListener { BatteryInfomation.timeFont.value = "barlow" }
+            chakraPetch.setOnClickListener { BatteryInfomation.timeFont.value = "chakrapetch" }
+            josefinsans.setOnClickListener { BatteryInfomation.timeFont.value = "josefinsans" }
+            lexend.setOnClickListener { BatteryInfomation.timeFont.value = "lexend" }
+            lora.setOnClickListener { BatteryInfomation.timeFont.value = "lora" }
+            pacifico.setOnClickListener { BatteryInfomation.timeFont.value = "pacifico" }
+            manrope.setOnClickListener { BatteryInfomation.timeFont.value = "manrope" }
+            quicksand.setOnClickListener { BatteryInfomation.timeFont.value = "quicksand" }
         }
     }
 }

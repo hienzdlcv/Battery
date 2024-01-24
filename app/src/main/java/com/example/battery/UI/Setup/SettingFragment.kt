@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import com.example.battery.Base.BaseFragment
 import com.example.battery.R
+import com.example.battery.UI.Gallery.Crud
 import com.example.battery.UI.Setting.farmentforViewPager.Fragment1
 import com.example.battery.UI.Setting.farmentforViewPager.Fragment2
 import com.example.battery.UI.Setting.farmentforViewPager.FragmentFont1
@@ -59,6 +61,13 @@ class SettingFragment : BaseFragment<FragmentSettingBinding>() {
                 dialog2Choose.visibility = View.GONE
                 dialog1.visibility = View.VISIBLE
                 dialog1Choose.visibility = View.GONE
+            }
+            dialogClose.setOnClickListener {
+                Crud.hideme.value = true
+            }
+            dialogCheck.setOnClickListener {
+                Crud.hideme.value = true
+                Toast.makeText(requireContext(),"Save your state success",Toast.LENGTH_SHORT).show()
             }
         }
     }

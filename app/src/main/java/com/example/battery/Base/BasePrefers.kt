@@ -1,11 +1,13 @@
 package com.example.battery.Base
 
 import android.content.Context
+import android.content.SharedPreferences
 import android.preference.PreferenceManager
 import androidx.core.content.edit
 import com.example.battery.UI.Setup.SetupSetting
 import com.google.gson.Gson
 
+private const val PREF_LANGUAGE = "pref_language"
 class BasePrefers(context: Context) {
 
     private val prefsLocale = "prefsLocale"
@@ -42,6 +44,5 @@ class BasePrefers(context: Context) {
         fun getPrefsInstance(): BasePrefers {
             return INSTANCE ?: error("GoPreferences not initialized!")
         }
-
     }
 }

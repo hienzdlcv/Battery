@@ -24,9 +24,10 @@
     <string name="search_result">検索結果</string>
     <string name="search_for_more_here">ここで詳細を検索</string>
     <string name="trending_image_for_you">トレンドの画像</string>
-    <string name="viewall">すべて表示</string>
+    <string name="viewall">すべ</string>
+    <string name="your_sticker">ヒンダンカバン</string>
     <string name="trending_gifs_for_you">トレンドの gif をあなたに</string>
-    <string name="your_phone_is_charging">携帯電話は充電中です</string>
+    <string name="your_phone_is_charging">携帯電話は/t充電中です</string>
     <string name="battery_remaining">バッテリー残量</string>
     <string name="help">ヘルプ</string>
     <string name="_1">1</string>

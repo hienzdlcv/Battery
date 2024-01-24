@@ -9,6 +9,7 @@
     <string name="home">Trang chủ</string>
 
     <string name="Good">Tốt</string>
+    <string name="viewall">Tất cả</string>
     <string name="TooHot">Quá nóng</string>
     <string name="normal">Bình thường</string>
     <string name="language">Ngôn ngữ</string>
@@ -24,7 +25,7 @@
     <string name="search_result">Kết quả tìm kiếm</string>
     <string name="search_for_more_here">Xem Thêm</string>
     <string name="trending_image_for_you">Hình ảnh thịnh hành dành cho bạn</string>
-    <string name="viewall">viewAll</string>
+    <string name="your_sticker">Hình dán của bạn</string>
     <string name="trending_gifs_for_you">Các gif thịnh hành dành cho bạn</string>
     <string name="your_phone_is_charging">điện thoại của bạn đang sạc</string>
     <string name="battery_remaining">Pin còn lại</string>

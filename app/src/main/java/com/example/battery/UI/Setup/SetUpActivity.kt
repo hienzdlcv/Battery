@@ -18,9 +18,11 @@ import com.example.battery.Base.BaseActivity
 import com.example.battery.DataBase.MyEntity
 import com.example.battery.R
 import com.example.battery.Receiver.BatteryInfomation
+import com.example.battery.UI.Gallery.Crud
 import com.example.battery.ViewModel.GalleryViewModel
 import com.example.battery.ViewModel.WallHeavenViewModel
 import com.example.battery.databinding.ActivitySetUpBinding
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class SetUpActivity() : BaseActivity<ActivitySetUpBinding>() {
@@ -47,6 +49,7 @@ class SetUpActivity() : BaseActivity<ActivitySetUpBinding>() {
         setUpFromFireBaseViewAll()
         setUpSticker()
         setupStickerFromGallery()
+
     }
 
     override fun setupListener() {
@@ -73,9 +76,11 @@ class SetUpActivity() : BaseActivity<ActivitySetUpBinding>() {
                 fragmentTransaction.commit()
                 fl4.visibility = View.VISIBLE
                 cardfl4.visibility = View.VISIBLE
+                Crud.hideme.value = false
             }
             icMenuSetUp.setOnClickListener {
                 onBackPressed()
+                binding.cardfl4.visibility = View.GONE
             }
 
         }
@@ -85,6 +90,23 @@ class SetUpActivity() : BaseActivity<ActivitySetUpBinding>() {
     @RequiresApi(Build.VERSION_CODES.O)
     private fun setupfromGallery() {
         val entity = bundle?.getString("entity")
+
+        lifecycleScope.launch {
+            Crud.hide2screen.flowWithLifecycle(lifecycle).collect{
+                if (it) {
+                    binding.secondPic.visibility = View.VISIBLE
+                }
+                else {binding.secondPic.visibility = View.GONE}
+            }
+        }
+
+        lifecycleScope.launch{
+            Crud.hideme.flowWithLifecycle(lifecycle).collect{
+                if(Crud.hideme.value) {
+                    binding.cardfl4.visibility = View.GONE
+                }
+            }
+        }
 
         lifecycleScope.launch {
             BatteryInfomation.timeFont.flowWithLifecycle(lifecycle).collect { string1 ->
@@ -279,7 +301,6 @@ class SetUpActivity() : BaseActivity<ActivitySetUpBinding>() {
                 }
                 timeViewModel.updateTimeNow1()
                 binding.txtTime1.text = timeViewModel.timeNow1.value
-                Toast.makeText(this@SetUpActivity,"Vcl2",Toast.LENGTH_SHORT).show()
 
             }
 
@@ -294,7 +315,6 @@ class SetUpActivity() : BaseActivity<ActivitySetUpBinding>() {
                 binding.txtTime1.visibility = View.VISIBLE
                 timeViewModel.updateTimeNow2()
                 binding.txtTime1.text = timeViewModel.timeNow2.value
-                Toast.makeText(this@SetUpActivity,"Vcl3",Toast.LENGTH_SHORT).show()
             }
 
             4 -> {

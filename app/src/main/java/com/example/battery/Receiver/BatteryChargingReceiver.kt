@@ -6,16 +6,22 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.os.BatteryManager
+import android.os.Build
 import android.util.Log
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.example.battery.Base.BasePrefers
 import com.example.battery.R
 import java.io.File
 import java.io.FileInputStream
 import java.io.IOException
 import java.io.InputStream
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class BatteryChargingReceiver : BroadcastReceiver() {
+
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onReceive(context: Context?, intent: Intent?) {
         when (intent?.action) {
             Intent.ACTION_BATTERY_CHANGED -> {
@@ -50,6 +56,7 @@ class BatteryChargingReceiver : BroadcastReceiver() {
             }
             Intent.ACTION_POWER_CONNECTED -> {
                 if (!BasePrefers.getPrefsInstance().receiver) return
+                getCurrentTime()
                 val ChargeStatus = "Your phone is charging"
                 BatteryInfomation.apply {
                     chargeStatus1.value = ChargeStatus
@@ -70,22 +77,13 @@ class BatteryChargingReceiver : BroadcastReceiver() {
         }
     }
 
-    private fun updateLockScreenWallpaper(context: Context?, filePath: String) {
-        val wallpaperManager = WallpaperManager.getInstance(context)
-        val file = File(filePath)
-
-        if (file.exists()) {
-            try {
-                val inputStream: InputStream = FileInputStream(file)
-                wallpaperManager.setStream(inputStream, null, true, WallpaperManager.FLAG_LOCK)
-            } catch (e: IOException) {
-                e.printStackTrace()
-            }
-        } else {
-            // Handle the case where the file does not exist
-        }
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun getCurrentTime() {
+        val currentTime = LocalDateTime.now()
+        val formatter = DateTimeFormatter.ofPattern("HH:mm")
+        val formattedTime = currentTime.format(formatter)
+        BatteryInfomation.timeCharge.value = formattedTime
     }
-
     @SuppressLint("PrivateApi")
     fun getBatteryCapacity(context: Context?): Double {
         val mPowerProfile: Any

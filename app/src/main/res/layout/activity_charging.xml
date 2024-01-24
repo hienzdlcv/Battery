@@ -44,7 +44,6 @@
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/secondPic2"
                 android:layout_width="170dp"
-                android:src="@drawable/ic_close"
                 android:visibility="gone"
                 android:layout_height="100dp"/>
 
@@ -77,14 +76,14 @@
                 android:id="@+id/clock2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:dial="@drawable/clock2"
+                android:dial="@drawable/clock2svg"
                 android:dialTint="@color/black"
-                android:hand_hour="@drawable/hourtest"
+                android:hand_hour="@drawable/minus"
                 android:hand_hourTint="@color/black"
-                android:hand_minute="@drawable/hourtest"
+                android:hand_minute="@drawable/group_23"
                 android:hand_minuteTint="@color/black"
                 android:timeZone="GMT+7"
-                android:visibility="gone" />
+                android:visibility="visible" />
 
             <AnalogClock
                 android:layout_marginTop="10dp"

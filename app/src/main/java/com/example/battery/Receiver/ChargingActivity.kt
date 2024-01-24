@@ -112,7 +112,7 @@ class ChargingActivity : BaseActivity<ActivityChargingBinding>() {
                     }
                 }
 
-            }, 5000)
+            }, 2800)
         }
         setonClose()
     }

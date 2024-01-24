@@ -27,5 +27,14 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent" />
 
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animate2"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/nodata"/>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

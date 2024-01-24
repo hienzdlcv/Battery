@@ -24,22 +24,22 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:layout_weight="1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/firesans"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/firesans"
                 android:text="BATTERY CHARGE"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/help_batteryInfo"
-                android:layout_marginEnd="30dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
+                android:layout_marginEnd="30dp"
                 android:src="@drawable/ic_question_setting" />
 
         </LinearLayout>
@@ -192,11 +192,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:orientation="vertical"
                 android:layout_marginEnd="20dp"
-                android:gravity="center_vertical"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_item_setting">
+                android:background="@drawable/bg_item_setting"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -210,24 +210,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:text="@string/_70"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
+                    android:lineHeight="22sp"
                     android:padding="5dp"
-                    android:lineHeight="22sp" />
+                    android:text="@string/_70"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/txt_pin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B9B9BF"
-                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
                     android:lineHeight="16sp"
                     android:padding="2dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/your_pin_is_good" />
+                    android:text="@string/your_pin_is_good"
+                    android:textColor="#B9B9BF"
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -235,52 +235,53 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_item_setting">
+                android:background="@drawable/bg_item_setting"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="24dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/charging_since"
                     android:layout_marginHorizontal="16dp"
-                    android:src="@drawable/img_tempeature_battery" />
+                    android:src="@drawable/img_tempeature_battery"
+                    android:text="@string/charging_since" />
 
                 <TextView
+                    android:id="@+id/timeCharge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:text="2:38 PM"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
+                    android:lineHeight="22sp"
                     android:padding="5dp"
-                    android:lineHeight="22sp" />
+                    android:text="2:38 PM"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B9B9BF"
-                    android:textSize="12sp"
-                    android:padding="2dp"
-                    android:lineHeight="16sp"
-                    android:layout_marginBottom="5dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/li_on" />
+                    android:layout_marginBottom="5dp"
+                    android:lineHeight="16sp"
+                    android:padding="2dp"
+                    android:text="@string/li_on"
+                    android:textColor="#B9B9BF"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:orientation="vertical"
                 android:layout_marginEnd="8dp"
-                android:gravity="center_vertical"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_item_setting">
+                android:background="@drawable/bg_item_setting"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -293,24 +294,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:text="@string/battery_type"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
+                    android:lineHeight="22sp"
                     android:padding="5dp"
-                    android:lineHeight="22sp" />
+                    android:text="@string/battery_type"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/battery_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B9B9BF"
-                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
                     android:lineHeight="16sp"
                     android:padding="2dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_gravity="center_horizontal"
-                    android:text="Li-on" />
+                    android:text="Li-on"
+                    android:textColor="#B9B9BF"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -319,11 +320,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_item_setting">
+                android:background="@drawable/bg_item_setting"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -338,35 +339,35 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:text="Battery Capacity"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
+                    android:lineHeight="22sp"
                     android:padding="5dp"
-                    android:lineHeight="22sp" />
+                    android:text="Battery Capacity"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/temperature_battery"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B9B9BF"
-                    android:textSize="12sp"
-                    android:padding="2dp"
-                    android:lineHeight="16sp"
-                    android:layout_marginBottom="5dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="Li-on" />
+                    android:layout_marginBottom="5dp"
+                    android:lineHeight="16sp"
+                    android:padding="2dp"
+                    android:text="Li-on"
+                    android:textColor="#B9B9BF"
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:orientation="vertical"
                 android:layout_marginEnd="8dp"
-                android:gravity="center_vertical"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_item_setting">
+                android:background="@drawable/bg_item_setting"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -379,24 +380,24 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:text="@string/battery_health"
-                    android:textSize="16sp"
+                    android:lineHeight="22sp"
                     android:padding="5dp"
-                    android:textStyle="bold"
-                    android:lineHeight="22sp" />
+                    android:text="@string/battery_health"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/battery_health"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B9B9BF"
-                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="5dp"
                     android:lineHeight="16sp"
                     android:padding="2dp"
-                    android:layout_marginBottom="5dp"
-                    android:layout_gravity="center_horizontal"
-                    android:text="@string/good" />
+                    android:text="@string/good"
+                    android:textColor="#B9B9BF"
+                    android:textSize="12sp" />
 
 
             </LinearLayout>
@@ -406,11 +407,11 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="1"
-                android:orientation="vertical"
-                android:gravity="center_vertical"
                 android:layout_marginStart="8dp"
                 android:layout_marginBottom="16dp"
-                android:background="@drawable/bg_item_setting">
+                android:background="@drawable/bg_item_setting"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
 
                 <ImageView
                     android:layout_width="24dp"
@@ -423,23 +424,23 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:textColor="@color/black"
-                    android:text="Battery"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
+                    android:lineHeight="22sp"
                     android:padding="5dp"
-                    android:lineHeight="22sp" />
+                    android:text="Battery"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#B9B9BF"
-                    android:textSize="12sp"
-                    android:padding="2dp"
-                    android:lineHeight="16sp"
-                    android:layout_marginBottom="5dp"
                     android:layout_gravity="center_horizontal"
-                    android:text="Li-on" />
+                    android:layout_marginBottom="5dp"
+                    android:lineHeight="16sp"
+                    android:padding="2dp"
+                    android:text="Li-on"
+                    android:textColor="#B9B9BF"
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </GridLayout>

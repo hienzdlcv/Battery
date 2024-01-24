@@ -24,6 +24,7 @@ import com.example.battery.databinding.FragmentHomeBinding
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.mikhaellopez.circularprogressbar.CircularProgressBar
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 
@@ -33,8 +34,6 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
     private lateinit var mAdapterSticker: HomeAdapter
     private lateinit var galleryViewModel: GalleryViewModel
     private lateinit var mheavenAdapter: HeavenAdapter
-
-    private val imageList: MutableList<ImageModel1> = mutableListOf()
 
     private lateinit var storageReference: StorageReference
 
@@ -90,16 +89,16 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
 
     @SuppressLint("SetTextI18n")
     fun setupProgressBar() {
-        binding.apply {
-            viewLifecycleOwner.lifecycleScope.launch {
-                BatteryInfomation.chargeStatus1.flowWithLifecycle(
-                    viewLifecycleOwner.lifecycle
-                ).collect{
-                    chargStatus.text = it
+        lifecycleScope.launch {
+            BatteryInfomation.chargeStatus1.flowWithLifecycle(lifecycle).collect{
+                BatteryInfomation.chargeStatus1.flowWithLifecycle(viewLifecycleOwner.lifecycle).collect{
+                    binding.chargStatus.text = it
                 }
-                BatteryInfomation.batteryPercentage.flowWithLifecycle(
-                    viewLifecycleOwner.lifecycle
-                ).collect {
+            }
+        }
+        lifecycleScope.launch {
+            BatteryInfomation.batteryPercentage.flowWithLifecycle(viewLifecycleOwner.lifecycle).collect {
+                binding.apply {
                     textView4.text = "$it%"
                     pinC.text = "$it%"
                     progressBar1.apply {

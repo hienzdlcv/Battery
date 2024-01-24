@@ -10,6 +10,7 @@ import com.example.battery.R
 import com.example.battery.Receiver.BatteryInfomation
 import com.example.battery.UI.HelpFragmentt
 import com.example.battery.databinding.FragmentBatteryBinding
+import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class BatteryFragment : BaseFragment<FragmentBatteryBinding>() {
@@ -36,6 +37,11 @@ class BatteryFragment : BaseFragment<FragmentBatteryBinding>() {
                     }
                     textView3.text = "$it%"
                     currentPinBar.setProgressPercentage(it.toDouble(), shouldAnimate = true)
+                }
+            }
+            lifecycleScope.launch {
+                BatteryInfomation.timeCharge.flowWithLifecycle(lifecycle).collect{
+                    timeCharge.text = it
                 }
             }
             Voltage1.text = BatteryInfomation.batteryVoltage.value.toString()

@@ -51,6 +51,7 @@
     <string name="pick_image">Pick Image</string>
     <string name="history">History</string>
     <string name="your_setting">Your Setting</string>
+    <string name="your_sticker">Your Sticker</string>
 
     <string-array name="battery_types">
         <item>Li-ion</item>

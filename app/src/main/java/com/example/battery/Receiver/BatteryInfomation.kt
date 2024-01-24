@@ -19,5 +19,7 @@ object BatteryInfomation {
     val timeShow = MutableStateFlow(false)
     val dateShow = MutableStateFlow(false)
 
+    val timeCharge = MutableStateFlow("")
+
     val textSearch = MutableStateFlow("")
 }

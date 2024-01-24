@@ -47,6 +47,14 @@ class StickerFragment : BaseFragment<FragmentStickerBinding>() {
         viewModel.fetchStickerData()
         viewModel.readAllSticker.observe(viewLifecycleOwner, Observer {
             mAdapter.setData(it)
+            if(it != null) {
+                mAdapter.setData(it)
+                binding.animate2.visibility = View.GONE
+            }
+            else {
+                binding.animate2.visibility = View.VISIBLE
+                binding.animate2.playAnimation()
+            }
         })
     }
 

@@ -1,6 +1,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
     <stroke
-        android:width="2dp"
-        android:color="#42FF21" /> <!-- You can adjust the width and color of the frame -->
+        android:width="4dp"
+        android:color="#FFFFFF" /> <!-- You can adjust the width and color of the frame -->
 </shape>

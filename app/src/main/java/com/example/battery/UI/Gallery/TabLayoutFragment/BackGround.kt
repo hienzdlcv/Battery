@@ -49,7 +49,14 @@ class BackGround : BaseFragment<FragmentBackGroundBinding>() {
 
         viewModel.getAll1()
         viewModel.getAll1.observe(viewLifecycleOwner, Observer {
-            galleryAdapter.setData(it)
+            if(it != null) {
+                galleryAdapter.setData(it)
+                binding.animate1.visibility = View.GONE
+            }
+            else {
+                binding.animate1.playAnimation()
+                binding.animate1.visibility = View.VISIBLE
+            }
         })
     }
 

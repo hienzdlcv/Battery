@@ -28,9 +28,6 @@ class SettingFragment : BaseFragment<FragmentSettingsBinding>() {
                 val rateUsDialog = RateUsDialog(requireContext())
                 rateUsDialog.show()
             }
-            yourSetting.setOnClickListener{
-
-            }
 
         }
     }
